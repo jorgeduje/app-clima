@@ -37,7 +37,7 @@ useEffect(() => {
             // let nd = new D 
             let hora = (new Date().getHours()+5)+(time/60/60) 
             let min = (new Date().getMinutes())
-            let sec = (new Date().getSeconds())
+            
             // let hora1 = hora > 23 ? hora = hora - 24 : hora
             console.log()
             setHour(`${hora > 23 ? hora = hora - 24 : hora}:${min}`)
