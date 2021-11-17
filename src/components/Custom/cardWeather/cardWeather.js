@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"; 
 import sun from "../../../assets/sun.svg"
 import clearSky from "../../../assets/clearSky.svg"
@@ -19,11 +19,9 @@ import NotFounds from "../NotFound/NotFounds";
 
 const CardWeather = ({cityName, temp, cambio, weather, time, humidity, speed})=>{
 
-    const history = useHistory()
+    
 
-    const handlerHistory = ()=>{
-        history.push("/")
-    }
+   
 
 
 

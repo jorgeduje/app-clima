@@ -1,3 +1,4 @@
+/* eslint-disable no-throw-literal */
 import { useState, useEffect} from 'react';
 
 
@@ -11,7 +12,7 @@ export const useFetch = (url) =>{
     useEffect(()=>{
 
 
-    const getData = async (url) =>{
+        const getData = async (url) =>{
         try {
             const response = await fetch(url)
             // console.log(response)
@@ -42,9 +43,9 @@ export const useFetch = (url) =>{
         getData(url);
 
 
-}, [url]);
+    }, [url]);
 
-// console.log(error)
-return {data, isPending, error}
+    // console.log(error)
+    return {data, isPending, error}
 
 }
